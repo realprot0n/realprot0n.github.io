@@ -5,19 +5,42 @@
         <meta charset="utf8">
         <title>site</title>
         <style>
-            @import url(
-            'https://fonts.googleapis.com/css2?family=Scoutie+Sans:ital,wght@0,200..800;1,200..800&display=swap'
+            @import url('https://fonts.googleapis.com/css2?family=Scoutie+Sans:ital,wght@0,200..800;1,200..800&display=swap'
             );
+            .scoutie-sans {
+                font-family: "Scoutie Sans", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+            
+            .float-left {
+                float: left;
+            }
+            .float-right {
+                float: right;
+            }
+            
             body {
                 color: white;
                 background-color: black;
                 text-align: center;
             }
-            .scoutie-sans {
-                font-family: "Scoutie Sans", sans-serif;
-                font-optical-sizing: auto;
-                font-weight: 200;
-                font-style: normal;
+            p {
+                text-indent: 1em;
+            }
+            figure {
+                display: inline-block;
+                width: min-content;
+                border: 5px solid #DDD;
+                border-radius: 1em;
+                background-color: white;
+                color: black;
+                margin: 10px;
+            }
+            figure img {
+                display: block;
+                max-width: 100%
             }
         </style>
     </head>
@@ -30,6 +53,25 @@
             <h4>m </h4>
             <h5>m </h5>
         </header>
+        <article>
+            <figure class="float-right">
+                <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTyNvR8YmXHSu9N53YNkXrP79cGsTqUCO45ikNAreRDAlW_BekA">
+                <figcaption>Duck for reference. The duck wants you to refer to them.</figcaption>
+            </figure>
+            <p style="text-align: left;">
+                Figured here is a duck. Woah. Just look at the duckness of this duck! Insane. Why, just absolutely insane!
+            </p>
+        </article>
+        <br style="clear:both">
+        <article>
+            <figure class="float-right">
+                <img src="https://www.crowdedkitchen.com/wp-content/uploads/2024/08/Homemade-Fig-Newtons-9.jpg">
+                <figcaption>Duck for reference. The duck wants you to refer to them.</figcaption>
+            </figure>
+            <p style="text-align: left;">
+                Figured here is a duck. Woah. Just look at the duckness of this duck! Insane. Why, just absolutely insane!
+            </p>
+        </article>
     </body>
     <script src="scripts\header_liner.js"></script>
 </html>
