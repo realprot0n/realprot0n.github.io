@@ -1,5 +1,5 @@
 const elements_and_lengths = [
-    ["h1", 90],
+    ["h1", 100],
     ["h2", 75],
     ["h3", 65],
     ["h4", 50],

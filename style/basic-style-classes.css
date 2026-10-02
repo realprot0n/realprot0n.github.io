@@ -13,3 +13,52 @@
 .float-right {
     float: right;
 }
+
+body {
+    color: white;
+    background: #170220;
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+p {
+    text-indent: 1em;
+    text-align: left;
+}
+figure {
+    display: inline-block;
+    width: min-content;
+    border: 5px solid #DDD;
+    border-radius: 1em;
+    background-color: white;
+    color: black;
+    margin: 10px;
+}
+figure img {
+    border-top-right-radius: 11px;
+    border-top-left-radius: 11px;
+    display: block;
+    max-width: 200px;
+}
+
+a {
+    vertical-align: middle;
+}
+a:link {
+    color: rgb(58, 58, 204);
+}
+a:hover {
+    color: rgb(82, 82, 231);
+}
+a:active {
+    color: rgb(111, 111, 230);
+}
+a:visited {
+    color: rgb(138, 43, 156);
+}
+a:visited:hover {
+    color: rgb(161, 60, 182);
+}
+a:visited:active {
+    color: rgb(197, 76, 221);
+}
