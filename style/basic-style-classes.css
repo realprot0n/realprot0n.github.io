@@ -17,14 +17,20 @@
 body {
     color: white;
     background: #170220;
+    margin: 0px;
+}
+
+main {
     text-align: center;
     margin-left: 5%;
     margin-right: 5%;
 }
+
 p {
     text-indent: 1em;
     text-align: left;
 }
+
 figure {
     display: inline-block;
     width: min-content;
@@ -65,4 +71,11 @@ a:visited:active {
 
 ul {
     text-align: left;
+}
+
+.main-page-link {
+    text-indent: 2em;
+    font-size: 1.25em;
+    text-align: left;
+    font-style: italic;
 }
