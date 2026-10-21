@@ -79,3 +79,22 @@ ul {
     text-align: left;
     font-style: italic;
 }
+
+/*use me latere*/
+.rainbow-linear {
+    background: linear-gradient(to right in hsl longer hue, hsl(0deg 100% 50%), hsl(360deg 100% 50%));
+}
+
+.clacks-background {
+    background-image:
+        linear-gradient(rgba(23, 2, 32, 1), rgba(23, 2, 32, 0.9)), 
+        /* linear-gradient(to right, rgba(255, 0, 0, 0.99), rgba(255, 255, 0, 0.99), rgba(0, 255, 0, 0.99), rgba(0, 255, 255, 0.99), rgba(0, 0, 255, 0.99), rgba(255, 0, 255, 0.99), rgba(255, 0, 0, 0.99)), */
+        url("/images/krita/checkerboard-balls.png");
+    background-repeat: repeat;
+}
+
+/*
+.clacks-background main {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))
+}
+*/
