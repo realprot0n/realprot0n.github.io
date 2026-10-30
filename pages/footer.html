@@ -13,10 +13,20 @@
             padding: 15px;
             align-items: center;
         }
+        .song-player-img {
+            border-radius: 50%;
+            border-color: white;
+            border-style: solid;
+        }
     </style>
+    <script>
+        document.getElementById('song-player').pause.connect()
+    </script>
     <hr width="95%">
     <br style="clear:both">
     <div class="footer-inside">
-        &copy; RealProton 2026 | contact: <a href="mailto:everythingclacks@gmail.com">everythingclacks@gmail.com</a>
+        &copy; RealProton 2026 | Contact: <a href="mailto:everythingclacks@gmail.com">everythingclacks@gmail.com</a>
+        <audio class="float-right" id="song-player" src="/sounds/The Sunset of 7 Suns (Sketch) ~ Toby Fox [ohBLWsjZD4w].mp3"></audio>
+        <img class="float-right song-player-img" src="/images/The Sunset of 7 Suns (Sketch) ~ Toby Fox [ohBLWsjZD4w].png">
     </div>
 </footer>
