@@ -47,9 +47,6 @@ figure img {
     max-width: 200px;
 }
 
-a {
-    vertical-align: middle;
-}
 a:link {
     color: rgb(125, 125, 233);
 }
