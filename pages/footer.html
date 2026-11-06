@@ -13,34 +13,10 @@
             padding: 15px;
             align-items: center;
         }
-        .song-player-img {
-            height: 64px;
-            border-radius: 50%;
-            border-color: white;
-            border-style: solid;
-            image-rendering: pixelated;
-
-            animation-name: song-player-spin;
-            animation-duration: 2s;
-            animation-timing-function: linear;
-            animation-iteration-count: infinite;
-            animation-play-state: paused;
-        }
-
-        @keyframes song-player-spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
     </style>
     <hr width="95%">
     <br style="clear:both">
     <div class="footer-inside">
         &copy; RealProton 2026 | Contact: <a href="mailto:everythingclacks@gmail.com">everythingclacks@gmail.com</a>
-        <audio controls class="float-right" id="song-player" src="/sounds/The Sunset of 7 Suns (Sketch) ~ Toby Fox [ohBLWsjZD4w].mp3"></audio>
-        <img class="float-right song-player-img" id="song-image" src="/images/The Sunset of 7 Suns (Sketch) ~ Toby Fox [ohBLWsjZD4w].png">
     </div>
 </footer>

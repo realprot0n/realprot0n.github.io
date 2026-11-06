@@ -6,15 +6,3 @@ fetch('/pages/footer.html') // Get the header
 .catch(error => console.error('Error loading header:', error)); // catch errors
 
 // i love self-explainitory comments !
-
-async function loadScript() {
-    console.log("FOOTER: adding the script");
-    let script = document.createElement("script");
-    let response = await fetch("/scripts/music_player.js");
-    let code = await response.text();
-    let text = document.createTextNode(code);
-    script.appendChild(text);
-    document.body.appendChild(script); 
-    console.log("FOOTER: added the script");
-}
-loadScript();
