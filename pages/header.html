@@ -34,11 +34,17 @@
             padding-right: 1em;
         }
         
-        .song-player img {
+        .song-player-images {
             height: 64px;
-            border-radius: 50%;
+            display: inline-block;
+            position: relative;
+        }
+        
+        .song-player-main-img {
+            max-height: 100%;
             image-rendering: pixelated;
             
+            border-radius: 50%; /* make circular */
             border-color: white;
             border-style: solid;
             
@@ -48,6 +54,23 @@
             animation-iteration-count: infinite;
             animation-play-state: paused;
         }
+
+        .song-player-svg {
+            /* all this is to keep it centered in the image*/
+            position: absolute;
+            max-height: 60%;
+            top: 50%; left: 50%;
+            transform: translate(-50%, -50%);
+            
+            filter: invert(1); /* make it white */
+            opacity: 90%; /* make it more opaque at first; 60% is in the keyframes*/
+            pointer-events: none; /* make mouse clicks pass through*/
+            
+            animation-duration: 1s;
+            animation-timing-function: ease-in;
+            animation-play-state: paused;
+            animation-fill-mode: forwards;
+        }
         
         @keyframes song-player-spin {
             from {
@@ -55,6 +78,24 @@
             }
             to {
                 transform: rotate(360deg);
+            }
+        }
+        
+        @keyframes song-player-svg-fade-out {
+            from {
+                opacity: 60%;
+            }
+            to {
+                opacity: 0%;
+            }
+        }
+        
+        @keyframes song-player-svg-fade-in {
+            from {
+                opacity: 0%;
+            }
+            to {
+                opacity: 60%;
             }
         }
     </style>
@@ -70,9 +111,13 @@
             <a href="/pages/past_projects.html">Past</a>
         </nav>
     </div>
+
     <div class="song-player">
-        <audio controls loop class="float-right" id="song-player" src="/sounds/The Sunset of 7 Suns (Sketch) ~ Toby Fox [ohBLWsjZD4w].mp3"></audio>
-        <img class="float-right" id="song-image" src="/images/The Sunset of 7 Suns (Sketch) ~ Toby Fox [ohBLWsjZD4w].png">
+        <audio loop class="float-right" id="song-player" src="/sounds/The Sunset of 7 Suns (Sketch) ~ Toby Fox [ohBLWsjZD4w].mp3"></audio>
+        <div class="song-player-images float-right">
+            <img class="song-player-main-img" id="song-image" src="/images/The Sunset of 7 Suns (Sketch) ~ Toby Fox [ohBLWsjZD4w].png">
+            <img class="song-player-svg" id="song-pause-play" src="/images/pause-button.svg">
+        </div>
     </div>
     <br style="clear:both">
     <hr width="95%">

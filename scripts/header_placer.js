@@ -1,7 +1,8 @@
 fetch('/pages/header.html') // Get the header
 .then(response => response.text()) // Turn response into text
-.then(loaded_data => {
+.then(async loaded_data => {
     document.getElementById('main-header-placeholder').innerHTML = loaded_data;
+    await loadScript();
 }) // replace the placeholder header tag
 .catch(error => console.error('Error loading header:', error)); // catch errors
 
@@ -17,4 +18,3 @@ async function loadScript() {
     document.body.appendChild(script); 
     console.log("HEADER: added the script");
 }
-loadScript();
