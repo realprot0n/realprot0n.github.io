@@ -6,6 +6,10 @@
         <title>site</title>
         <link rel="stylesheet" href="/style/basic-style-classes.css">
         <style>
+            .clacks-media {
+                text-align: center;
+            }
+
             .clacks-media a {
                 display: inline-block;
                 background-color: #1c0357;
@@ -21,6 +25,7 @@
                 outline-style: solid;
                 border-radius: 1em;
             }
+
             .clacks-media a:hover {
                 font-size: larger;
                 background-color: #3a0ea0;
@@ -31,6 +36,7 @@
                 margin-top: 0px;
                 margin-bottom: 0px;
             }
+            
             .clacks-media a span {
                 font-size: 24px;
                 display: inline-block;
@@ -48,13 +54,13 @@
             <div class="main-page-link">Note: this page is for projects I'm currently working on. To find past projects, see <a href="/pages/past_projects.html">Past Projects</a>.</div>
             <article>
                 <h2> Classroom Music Player </h2>
-                <figure class="float-right" style="max-width: 1000px;">
+                <figure class="float-right">
                     <img src="/images/classroom_music_player_img.png" width="300" style="max-width: max-content;">
                     <figcaption>An image of the program's UI. This is it at the moment. aw man.</figcaption>
                 </figure>
                 <p>
-                    I just recently made this one public (open-source); its meant to be a way for teachers to make collaborative playlists for their classroom.
-                    Teachers will be able to make a google form to get youtube links to songs from their students.
+                    I just recently made my Classroom Music Player source code public (open-source); its meant to be a way for teachers to make collaborative playlists for their classroom.
+                    Teachers will be able to make a google form to get youtube links to songs from their students, then download those songs and moderate & play them.
                     Currently, this is barely even a mnimum viable product (MVP).
                     Instructions to install and run this can be found in the <a href="https://github.com/realprot0n/ClassroomMusicPlayer">GitHub repository</a>.
                 </p>
@@ -66,12 +72,12 @@
                     <li>An actual audio player for it; with the generic controls you would expect, plus something showing the suggestor's name (if not anonymous), and the video's thumbnail.</li>
                 </ul>
                 <p>
-                    Did i mention it's open-source ?! YOU can contribute to it !!! Please?
+                    Did i mention it's open-source ?! <mark>YOU</mark> can contribute to it !!! Please?
                 </p>
             </article>
             <br style="clear:both">
             <article>
-                <h2> EverythingClacks </h2>
+                <h2 id="EverythingClacks"> EverythingClacks </h2>
                 <p>
                     An <a href="http://earclacks.fun/">Earclacks</a>-inspired weapon ball battling simulation. Balls are given weapons to fight with. Pretty self-explaniatory.
                 </p>

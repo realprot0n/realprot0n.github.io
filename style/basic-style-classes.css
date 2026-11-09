@@ -21,14 +21,21 @@ body {
 }
 
 main {
-    text-align: center;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 p {
     text-indent: 1em;
-    text-align: left;
+}
+
+mark {
+    background: #ffff0030;
+    color: white;   
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    text-align: center;
 }
 
 figure {
